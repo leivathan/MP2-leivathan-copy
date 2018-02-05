@@ -37,6 +37,10 @@ public class Anagram {
      * @see <a href="https://www.vocabulary.com/dictionary/anagram">Definition of anagram</a>
      */
     public static boolean areAnagrams(final String first, final String second) {
+        if (first == null || second == null) {
+            return false;
+        }
+
     }
 
     /* ********************************************************************************************

@@ -40,7 +40,7 @@ public class Anagram {
         if (first == null || second == null) {
             return false;
         }
-
+        return true;
     }
 
     /* ********************************************************************************************

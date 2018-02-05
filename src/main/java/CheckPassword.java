@@ -10,31 +10,55 @@ import java.util.Scanner;
  */
 
 public class CheckPassword {
-public static boolean checkPassword(String password, int minLength, int minLetter, int minNumber, int minSpecial){
+public static boolean checkPassword(final String password, final int minLength, final int minLetter,
+                                    final int minNumber, final int minSpecial) {
     boolean validPass = false;
     int numberOfLetters = 0;
     int numberOfNumbers = 0;
     int numberOfSpecials = 0;
     for (int i = 0; i < password.length(); i++) {
-        if (password.charAt(i) == 'a' || password.charAt(i) == 'b' || password.charAt(i) == 'c' || password.charAt(i) == 'd' || password.charAt(i) == 'e' || password.charAt(i) == 'f' || password.charAt(i) == 'g' ||password.charAt(i) == 'h' || password.charAt(i) == 'i' || password.charAt(i) == 'j' || password.charAt(i) == 'k' || password.charAt(i) == 'l' || password.charAt(i) == 'm' || password.charAt(i) == 'n' || password.charAt(i) == 'o' || password.charAt(i) == 'p' || password.charAt(i) == 'q' || password.charAt(i) == 'r' || password.charAt(i) == 's' || password.charAt(i) == 't' || password.charAt(i) == 'u' || password.charAt(i) == 'v' || password.charAt(i) == 'w' || password.charAt(i) == 'x' || password.charAt(i) == 'y' || password.charAt(i) == 'z') {
+        char[] passCopy = password.toCharArray();
+        if (password.charAt(i) == 'a' || password.charAt(i) == 'b' || password.charAt(i) == 'c'
+                || password.charAt(i) == 'd' || password.charAt(i) == 'e' || password.charAt(i) == 'f'
+                || password.charAt(i) == 'g' || password.charAt(i) == 'h' || password.charAt(i) == 'i'
+                || password.charAt(i) == 'j' || password.charAt(i) == 'k' || password.charAt(i) == 'l'
+                || password.charAt(i) == 'm' || password.charAt(i) == 'n' || password.charAt(i) == 'o'
+                || password.charAt(i) == 'p' || password.charAt(i) == 'q' || password.charAt(i) == 'r'
+                || password.charAt(i) == 's' || password.charAt(i) == 't' || password.charAt(i) == 'u'
+                || password.charAt(i) == 'v' || password.charAt(i) == 'w' || password.charAt(i) == 'x'
+                || password.charAt(i) == 'y' || password.charAt(i) == 'z') {
             numberOfLetters += 1;
-        } else if (password.charAt(i) == 'A' || password.charAt(i) == 'B' || password.charAt(i) == 'C' || password.charAt(i) == 'D' || password.charAt(i) == 'E' || password.charAt(i) == 'F' || password.charAt(i) == 'G' ||password.charAt(i) == 'H' || password.charAt(i) == 'I' || password.charAt(i) == 'J' || password.charAt(i) == 'K' || password.charAt(i) == 'L' || password.charAt(i) == 'M' || password.charAt(i) == 'N' || password.charAt(i) == 'O' || password.charAt(i) == 'P' || password.charAt(i) == 'Q' || password.charAt(i) == 'R' || password.charAt(i) == 'S' || password.charAt(i) == 'T' || password.charAt(i) == 'U' || password.charAt(i) == 'V' || password.charAt(i) == 'W' || password.charAt(i) == 'X' || password.charAt(i) == 'Y' || password.charAt(i) == 'Z') {
+        } else if (password.charAt(i) == 'A' || password.charAt(i) == 'B' || password.charAt(i) == 'C'
+                || password.charAt(i) == 'D' || password.charAt(i) == 'E' || password.charAt(i) == 'F'
+                || password.charAt(i) == 'G' || password.charAt(i) == 'H' || password.charAt(i) == 'I'
+                || password.charAt(i) == 'J' || password.charAt(i) == 'K' || password.charAt(i) == 'L'
+                || password.charAt(i) == 'M' || password.charAt(i) == 'N' || password.charAt(i) == 'O'
+                || password.charAt(i) == 'P' || password.charAt(i) == 'Q' || password.charAt(i) == 'R'
+                || password.charAt(i) == 'S' || password.charAt(i) == 'T' || password.charAt(i) == 'U'
+                || password.charAt(i) == 'V' || password.charAt(i) == 'W' || password.charAt(i) == 'X'
+                || password.charAt(i) == 'Y' || password.charAt(i) == 'Z') {
             numberOfLetters += 1;
         }
-        if (password.charAt(i) == '0' || password.charAt(i) == '1' || password.charAt(i) == '2' || password.charAt(i) == '3' || password.charAt(i) == '4' || password.charAt(i) == '5' || password.charAt(i) == '6' || password.charAt(i) == '7' || password.charAt(i) == '8' || password.charAt(i) == '9') {
+        if (password.charAt(i) == '0' || password.charAt(i) == '1' || password.charAt(i) == '2'
+                || password.charAt(i) == '3' || password.charAt(i) == '4' || password.charAt(i) == '5'
+                || password.charAt(i) == '6' || password.charAt(i) == '7' || password.charAt(i) == '8'
+                || password.charAt(i) == '9') {
             numberOfNumbers += 1;
         }
-        if (password.charAt(i) == '!' || password.charAt(i) == '@' || password.charAt(i) == '#' || password.charAt(i) == '$' || password.charAt(i) == '%' || password.charAt(i) == '^' || password.charAt(i) == '&' || password.charAt(i) == '*') {
+        if (password.charAt(i) == '!' || password.charAt(i) == '@' || password.charAt(i) == '#'
+                || password.charAt(i) == '$' || password.charAt(i) == '%' || password.charAt(i) == '^'
+                || password.charAt(i) == '&' || password.charAt(i) == '*') {
             numberOfSpecials += 1;
         }
-        if (password.length() >= minLength && numberOfLetters >= minLetter && numberOfNumbers >= minNumber && numberOfSpecials >= minSpecial) {
+        if (password.length() >= minLength && numberOfLetters >= minLetter
+                && numberOfNumbers >= minNumber && numberOfSpecials >= minSpecial) {
             validPass = true;
         } else {
             validPass = false;
         }
     }
     return validPass;
-
+}
     /**
      * Given a potential password check it against provided rules.
      * <p>
@@ -84,5 +108,4 @@ public static boolean checkPassword(String password, int minLength, int minLette
             System.out.println("The password is invalid");
         }
     }
-}
 }

@@ -10,9 +10,11 @@ import java.util.Scanner;
  * @see <a href="https://cs125.cs.illinois.edu/MP/2/">MP2 Documentation</a>
  */
 public class StringSplitter {
-    private String words = "";
-    return words;
-}
+    public static java.lang.String[] splitString​(java.lang.String input) {
+        String[] words = {""};
+        return words;
+    }
+
     /* ********************************************************************************************
      * You do not need to modify code below this comment.
      * ********************************************************************************************/

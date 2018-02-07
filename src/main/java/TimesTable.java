@@ -10,7 +10,29 @@ import java.util.Scanner;
  * </p>
  *
  */
+
+
 public class TimesTable {
+    /**
+     * Given two positive numbers first and second, produce a multiplication table for numbers first through second, inclusive.
+     * <p>
+     * For example, if create(4, 6) produces the following 2D array: [[0, 4, 5, 6] [4, 16, 20, 24] [5, 20, 25, 30] [6, 24, 30, 36]]
+     * </p>
+     * <p>
+     * Note that:
+     *     <ul>
+     *         <li>The output array should always start with a zero, such that output[0][0] == 0.</li>
+     *         <li>The output array is symmetric, such that output[n][m] == output[m][n].</li>
+     *     </ul>
+     * </p>
+     * <p>
+     * You should reject any values of first and second that are not positive.
+     * You should also reject the case where second is not greater than first. In these cases create return null.
+     * </p>
+     * @param first the number to start the multiplication table at
+     * @param second the number to end the multiplication table with
+     * @return the two-dimensional multiplication table, or null if the arguments are invalid
+     */
     public static int[][] createTimesTable(final int first, final int second) {
         if (first <= 0 || second <= 0) {
             return null;
@@ -46,7 +68,6 @@ public class TimesTable {
         int[][] ans  = createTimesTable(first, second);
     }
 }
-
 /**
  * Given two positive numbers first and second, produce a multiplication table for numbers through first and second, inclusive.
  */

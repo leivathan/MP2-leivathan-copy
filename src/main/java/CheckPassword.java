@@ -21,15 +21,15 @@ public static boolean checkPassword(final String password, final int minLength, 
     }
     for (int i = 0; i < password.length(); i++) {
         if (Character.isLetter(password.charAt(i))) {
-            numberOfLetters += 1;
+            numberOfLetters++;
         }
         if (Character.isDigit(password.charAt(i))) {
-            numberOfNumbers += 1;
+            numberOfNumbers++;
         }
         if (password.charAt(i) == '!' || password.charAt(i) == '@' || password.charAt(i) == '#'
                 || password.charAt(i) == '$' || password.charAt(i) == '%' || password.charAt(i) == '^'
                 || password.charAt(i) == '&' || password.charAt(i) == '*') {
-            numberOfSpecials += 1;
+            numberOfSpecials++;
         }
         if (password.length() >= minLength && numberOfLetters >= minLetter
                 && numberOfNumbers >= minNumber && numberOfSpecials >= minSpecial) {

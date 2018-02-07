@@ -40,6 +40,9 @@ public class Anagram {
         if (first == null || second == null) {
             return false;
         }
+        int isAF = 0;
+
+       // for (int i = 0; i;)
         return true;
     }
 

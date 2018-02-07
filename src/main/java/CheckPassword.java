@@ -16,6 +16,9 @@ public static boolean checkPassword(final String password, final int minLength, 
     int numberOfLetters = 0;
     int numberOfNumbers = 0;
     int numberOfSpecials = 0;
+    if (password.equals("") && minLength == 0 && minLetter == 0 && minNumber == 0 && minSpecial == 0) {
+        return true;
+    }
     for (int i = 0; i < password.length(); i++) {
         if (Character.isLetter(password.charAt(i))) {
             numberOfLetters += 1;

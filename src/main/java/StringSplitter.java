@@ -11,8 +11,14 @@ import java.util.Scanner;
  */
 public class StringSplitter {
     public static java.lang.String[] splitString​(java.lang.String input) {
-        String[] words = {""};
-        return words;
+        if (input == null) {
+            return null;
+        } else if (input.equals("")) {
+            String[] empty = {""};
+            return empty;
+        }
+        String[] otherThing = new String[input.length()];
+        return otherThing;
     }
 
     /* ********************************************************************************************

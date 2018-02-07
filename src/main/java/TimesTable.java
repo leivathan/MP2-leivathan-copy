@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class TimesTable {
     public static int[][] createTimesTable(final int first, final int second) {
-        if (first < 0 || second < 0) {
+        if (first <= 0 || second <= 0) {
             return null;
         }
         if (second <= first) {
@@ -21,12 +21,12 @@ public class TimesTable {
         int difference = second - first;
         int[][] timesTable = new int[difference + 2][difference + 2];
         timesTable[0][0] = 0;
-        for (int i = 0; i < difference + 2; i++) {
-           for (int j = 0; j < difference + 2; j++) {
-                 timesTable[i + 1][j + 1] = (first + i) * (first + j);
+        for (int i = 0; i < difference + 1; i++) {
+           for (int j = 0; j < difference + 1; j++) {
+             timesTable[i + 1][j + 1] = (first + i) * (first + j);
            }
-           timesTable[i + 1][0] = (first + i);
-           timesTable[0][i + 1] = (first + i);
+           timesTable[i + 1][0] = first + i;
+           timesTable[0][i + 1] = first + i;
         }
 
         for (int i = 0; i < difference + 2; i++) {

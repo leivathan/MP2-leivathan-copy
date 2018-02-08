@@ -35,6 +35,12 @@ public class StringSplitter {
                     thisGuy += input.substring(i, i + 1);
             }
         }
+        if (input.charAt(input.length() - 1) == input.charAt(input.length() - 2)) {
+            thisGuy += input.substring(input.length() - 1, input.length());
+        }
+        if (input.charAt(input.length()-1) != input.charAt(input.length() - 2)) {
+            thisGuy += " " + input.substring(input.length() - 1, input.length());
+        }
         return thisGuy.split(" ");
     }
 

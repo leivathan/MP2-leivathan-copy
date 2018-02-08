@@ -59,6 +59,15 @@ public class TimesTable {
         }
         return timesTable;
     }
+
+    /**
+     * Solicits two integers from the user and print the resulting multiplication table.
+     * <p>
+     * You are free to review this function, but should not modify it.
+     * Note that this function is not tested by the test suite, as it is purely to aid your own interactive testing.
+     * </p>
+     * @param unused unused input arguments
+     */
     public static void main(final String[] unused) {
         Scanner lineScanner = new Scanner(System.in);
         System.out.println("Enter a string: ");

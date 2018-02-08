@@ -40,9 +40,110 @@ public class Anagram {
         if (first == null || second == null) {
             return false;
         }
-        int isAF = 0;
+        int firstLetterAs = 0;
+        int firstLetterBs = 0;
+        int firstLetterCs = 0;
+        int firstLetterDs = 0;
+        int firstLetterEs = 0;
+        int firstLetterFs = 0;
+        int firstLetterGs = 0;
+        int firstLetterHs = 0;
+        int firstLetterIs = 0;
+        int firstLetterJs = 0;
+        int firstLetterKs = 0;
+        int firstLetterLs = 0;
+        int firstLetterMs = 0;
+        int firstLetterNs = 0;
+        int firstLetterOs = 0;
+        int firstLetterPs = 0;
+        int firstLetterQs = 0;
+        int firstLetterRs = 0;
+        int firstLetterSs = 0;
+        int firstLetterTs = 0;
+        int firstLetterUs = 0;
+        int firstLetterVs = 0;
+        int firstLetterWs = 0;
+        int firstLetterXs = 0;
+        int firstLetterYs = 0;
+        int firstLetterZs = 0;
+        int secondLetterAs = 0;
+        int secondLetterBs = 0;
+        int secondLetterCs = 0;
+        int secondLetterDs = 0;
+        int secondLetterEs = 0;
+        int secondLetterFs = 0;
+        int secondLetterGs = 0;
+        int secondLetterHs = 0;
+        int secondLetterIs = 0;
+        int secondLetterJs = 0;
+        int secondLetterKs = 0;
+        int secondLetterLs = 0;
+        int secondLetterMs = 0;
+        int secondLetterNs = 0;
+        int secondLetterOs = 0;
+        int secondLetterPs = 0;
+        int secondLetterQs = 0;
+        int secondLetterRs = 0;
+        int secondLetterSs = 0;
+        int secondLetterTs = 0;
+        int secondLetterUs = 0;
+        int secondLetterVs = 0;
+        int secondLetterWs = 0;
+        int secondLetterXs = 0;
+        int secondLetterYs = 0;
+        int secondLetterZs = 0;
+        int firstNumber0s = 0;
+        int firstNumber1s = 0;
+        int firstNumber2s = 0;
+        int firstNumber3s = 0;
+        int firstNumber4s = 0;
+        int firstNumber5s = 0;
+        int firstNumber6s = 0;
+        int firstNumber7s = 0;
+        int firstNumber8s = 0;
+        int firstNumber9s = 0;
 
-       // for (int i = 0; i;)
+        for (int i = 0; i < first.length(); i++) {
+            if (first.charAt(i) == 'A' || first.charAt(i) == 'a') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'B' || first.charAt(i) == 'b') {
+                firstLetterBs++;
+            } else if (first.charAt(i) == 'C' || first.charAt(i) == 'c') {
+                firstLetterCs++;
+            } else if (first.charAt(i) == 'D' || first.charAt(i) == 'd') {
+                firstLetterDs++;
+            } else if (first.charAt(i) == 'E' || first.charAt(i) == 'e') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'F' || first.charAt(i) == 'g') {
+                firstLetterGs++;
+            } else if (first.charAt(i) == 'G' || first.charAt(i) == 'g') {
+                firstLetterGs++;
+            } else if (first.charAt(i) == 'H' || first.charAt(i) == 'h') {
+                firstLetterHs++;
+            } else if (first.charAt(i) == 'I' || first.charAt(i) == 'i') {
+                firstLetterIs++;
+            } else if (first.charAt(i) == 'J' || first.charAt(i) == 'j') {
+                firstLetterJs++;
+            } else if (first.charAt(i) == 'K' || first.charAt(i) == 'k') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'L' || first.charAt(i) == 'l') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'M' || first.charAt(i) == 'm') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'N' || first.charAt(i) == 'n') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'O' || first.charAt(i) == 'o') {
+                firstLetterAs++;
+            } else if (first.charAt(i) == 'P' || first.charAt(i) == 'p') {
+                firstLetterFs++;
+            } else if (first.charAt(i) == 'Q' || first.charAt(i) == 'q') {
+                firstLetterQs++;
+            } else if (first.charAt(i) == 'R' || first.charAt(i) == 'r') {
+                firstLetterRs++;
+            } else if (first.charAt(i) == 'S' || first.charAt(i) == 's') {
+                firstLetterSs++;
+            }
+        }
         return true;
     }
 

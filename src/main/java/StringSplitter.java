@@ -10,15 +10,32 @@ import java.util.Scanner;
  * @see <a href="https://cs125.cs.illinois.edu/MP/2/">MP2 Documentation</a>
  */
 public class StringSplitter {
-    public static java.lang.String[] splitString​(java.lang.String input) {
+    public static String[] splitString​(String input) {
         if (input == null) {
             return null;
-        } else if (input.equals("")) {
-            String[] empty = {""};
+        } else if (input.isEmpty()) {
+            String[] empty = new String[0];
             return empty;
         }
-        String[] otherThing = new String[input.length()];
-        return otherThing;
+        String thisGuy = "";
+        if (input.length() == 1) {
+            thisGuy = input;
+        }
+        for (int i = 0; i <= input.length() - 2; i++) {
+            if (i == 0 && input.charAt(i) != input.charAt(i + 1)) {
+                thisGuy = input.substring(i, i + 1);
+            }
+            if (i != 0 && input.charAt(i) != input.charAt(i - 1)) {
+                thisGuy += " ";
+            }
+            if (i != 0 && input.charAt(i) == input.charAt(i + 1)) {
+                    thisGuy += input.substring(i,i + 1);
+            }
+            if (i != 0 && input.charAt(i) != input.charAt(i + 1)) {
+                    thisGuy += input.substring(i, i + 1);
+            }
+        }
+        return thisGuy.split(" ");
     }
 
     /* ********************************************************************************************

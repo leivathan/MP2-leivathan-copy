@@ -13,7 +13,7 @@ public class StringSplitter {
     public static String[] splitString​(String input) {
         if (input == null) {
             return null;
-        } else if (input.isEmpty() || input.equals(" ")) {
+        } else if (input.isEmpty()) {
             String[] empty = new String[0];
             return empty;
         }
@@ -25,8 +25,11 @@ public class StringSplitter {
             if (i == 0 && input.charAt(i) != input.charAt(i + 1)) {
                 thisGuy = input.substring(i, i + 1);
             }
+            if (i == 0 && input.charAt(i) == input.charAt(i + 1)) {
+                thisGuy = input.substring(i, i + 1);
+            }
             if (i != 0 && input.charAt(i) != input.charAt(i - 1)) {
-                thisGuy += " ";
+                thisGuy += ",";
             }
             if (i != 0 && input.charAt(i) == input.charAt(i + 1)) {
                     thisGuy += input.substring(i,i + 1);
@@ -35,13 +38,15 @@ public class StringSplitter {
                     thisGuy += input.substring(i, i + 1);
             }
         }
-        if (input.charAt(input.length() - 1) == input.charAt(input.length() - 2)) {
-            thisGuy += input.substring(input.length() - 1, input.length());
+        if (input.length() != 1) {
+            if (input.charAt(input.length() - 1) == input.charAt(input.length() - 2)) {
+                thisGuy += input.substring(input.length() - 1, input.length());
+            }
+            if (input.charAt(input.length() - 1) != input.charAt(input.length() - 2)) {
+                thisGuy += "," + input.substring(input.length() - 1, input.length());
+            }
         }
-        if (input.charAt(input.length()-1) != input.charAt(input.length() - 2)) {
-            thisGuy += " " + input.substring(input.length() - 1, input.length());
-        }
-        return thisGuy.split(" ");
+        return thisGuy.split(",");
     }
 
     /* ********************************************************************************************

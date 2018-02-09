@@ -10,6 +10,28 @@ import java.util.Scanner;
  */
 
 public class CheckPassword {
+    /**
+     * Given a potential password check it against provided rules.
+     * <p>
+     * The function is passed a length and letter, number, and special character counts.
+     * It should return true if the password is the appropriate length and has the required number of letters,
+     * numbers, and special characters, and false otherwise. !,@,#,$,%,^,&amp; (ampersand),
+     * and * count as special characters.
+     * <p>
+     * The counts may be zero, in which case there are no requirements for that rule. For example, if
+     * numberCount == 0 then the password does not have to contain a number. Of course, it still can.
+     * <p>
+     * The passed password string may be empty but will not be null.
+     * <p>
+     * Declare and write this function.
+     *
+     * @param password the password to check
+     * @param minLength the minimum length for the password
+     * @param minLetter the minimum number of letters the password must contain
+     * @param minNumber the minimum number of letters that the password must contain
+     * @param minSpecial the minimum number of special characters that the password must contain
+     * @return true if the password follows the rules, false otherwise
+     */
 public static boolean checkPassword(final String password, final int minLength, final int minLetter,
                                     final int minNumber, final int minSpecial) {
     boolean validPass = false;
@@ -40,29 +62,7 @@ public static boolean checkPassword(final String password, final int minLength, 
     }
     return validPass;
 }
-    /**
-     * Given a potential password check it against provided rules.
-     * <p>
-     * The function is passed a length and letter, number, and special character counts.
-     * It should return true if the password is the appropriate length and has the required number of letters,
-     * numbers, and special characters, and false otherwise. !,@,#,$,%,^,&amp; (ampersand),
-     * and * count as special characters.
-     * <p>
-     * The counts may be zero, in which case there are no requirements for that rule. For example, if
-     * numberCount == 0 then the password does not have to contain a number. Of course, it still can.
-     * <p>
-     * The passed password string may be empty but will not be null.
-     * <p>
-     * Declare and write this function.
-     *
-     * @param validPass the boolean that gets the true/false value for a valid password.
-     * @param password the password to check
-     * @param minLength the minimum length for the password
-     * @param minLetter the minimum number of letters the password must contain
-     * @param minNumber the minimum number of letters that the password must contain
-     * @param minSpecial the minimum number of special characters that the password must contain
-     * @return true if the password follows the rules, false otherwise
-     */
+
 
     /* ********************************************************************************************
      * You do not need to modify code below this comment.

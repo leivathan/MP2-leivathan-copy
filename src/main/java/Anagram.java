@@ -102,6 +102,16 @@ public class Anagram {
         int firstNumber7s = 0;
         int firstNumber8s = 0;
         int firstNumber9s = 0;
+        int secondNumber0s = 0;
+        int secondNumber1s = 0;
+        int secondNumber2s = 0;
+        int secondNumber3s = 0;
+        int secondNumber4s = 0;
+        int secondNumber5s = 0;
+        int secondNumber6s = 0;
+        int secondNumber7s = 0;
+        int secondNumber8s = 0;
+        int secondNumber9s = 0;
 
         for (int i = 0; i < first.length(); i++) {
             if (first.charAt(i) == 'A' || first.charAt(i) == 'a') {
@@ -113,9 +123,9 @@ public class Anagram {
             } else if (first.charAt(i) == 'D' || first.charAt(i) == 'd') {
                 firstLetterDs++;
             } else if (first.charAt(i) == 'E' || first.charAt(i) == 'e') {
-                firstLetterAs++;
+                firstLetterEs++;
             } else if (first.charAt(i) == 'F' || first.charAt(i) == 'g') {
-                firstLetterGs++;
+                firstLetterFs++;
             } else if (first.charAt(i) == 'G' || first.charAt(i) == 'g') {
                 firstLetterGs++;
             } else if (first.charAt(i) == 'H' || first.charAt(i) == 'h') {
@@ -125,26 +135,156 @@ public class Anagram {
             } else if (first.charAt(i) == 'J' || first.charAt(i) == 'j') {
                 firstLetterJs++;
             } else if (first.charAt(i) == 'K' || first.charAt(i) == 'k') {
-                firstLetterAs++;
+                firstLetterKs++;
             } else if (first.charAt(i) == 'L' || first.charAt(i) == 'l') {
-                firstLetterAs++;
+                firstLetterLs++;
             } else if (first.charAt(i) == 'M' || first.charAt(i) == 'm') {
-                firstLetterAs++;
+                firstLetterMs++;
             } else if (first.charAt(i) == 'N' || first.charAt(i) == 'n') {
-                firstLetterAs++;
+                firstLetterNs++;
             } else if (first.charAt(i) == 'O' || first.charAt(i) == 'o') {
-                firstLetterAs++;
+                firstLetterOs++;
             } else if (first.charAt(i) == 'P' || first.charAt(i) == 'p') {
-                firstLetterFs++;
+                firstLetterPs++;
             } else if (first.charAt(i) == 'Q' || first.charAt(i) == 'q') {
                 firstLetterQs++;
             } else if (first.charAt(i) == 'R' || first.charAt(i) == 'r') {
                 firstLetterRs++;
             } else if (first.charAt(i) == 'S' || first.charAt(i) == 's') {
                 firstLetterSs++;
+            } else if (first.charAt(i) == 'T' || first.charAt(i) == 't') {
+                firstLetterTs++;
+            } else if (first.charAt(i) == 'U' || first.charAt(i) == 'u') {
+                firstLetterUs++;
+            } else if (first.charAt(i) == 'V' || first.charAt(i) == 'v') {
+                firstLetterVs++;
+            } else if (first.charAt(i) == 'W' || first.charAt(i) == 'w') {
+                firstLetterWs++;
+            } else if (first.charAt(i) == 'X' || first.charAt(i) == 'x') {
+                firstLetterXs++;
+            } else if (first.charAt(i) == 'Y' || first.charAt(i) == 'y') {
+                firstLetterYs++;
+            } else if (first.charAt(i) == 'Z' || first.charAt(i) == 'z') {
+                firstLetterZs++;
+            } else if (first.charAt(i) == '0') {
+                firstNumber0s++;
+            } else if (first.charAt(i) == '1') {
+                firstNumber1s++;
+            } else if (first.charAt(i) == '2') {
+                firstNumber2s++;
+            } else if (first.charAt(i) == '3') {
+                firstNumber3s++;
+            } else if (first.charAt(i) == '4') {
+                firstNumber4s++;
+            } else if (first.charAt(i) == '5') {
+                firstNumber5s++;
+            } else if (first.charAt(i) == '6') {
+                firstNumber6s++;
+            } else if (first.charAt(i) == '7') {
+                firstNumber7s++;
+            } else if (first.charAt(i) == '8') {
+                firstNumber8s++;
+            } else if (first.charAt(i) == '9') {
+                firstNumber9s++;
             }
         }
-        return true;
+        for (int j = 0; j < second.length(); j++) {
+            if (second.charAt(j) == 'A' || second.charAt(j) == 'a') {
+                secondLetterAs++;
+            } else if (second.charAt(j) == 'B' || second.charAt(j) == 'b') {
+                secondLetterBs++;
+            } else if (second.charAt(j) == 'C' || second.charAt(j) == 'c') {
+                secondLetterCs++;
+            } else if (second.charAt(j) == 'D' || second.charAt(j) == 'd') {
+                secondLetterDs++;
+            } else if (second.charAt(j) == 'E' || second.charAt(j) == 'e') {
+                secondLetterEs++;
+            } else if (second.charAt(j) == 'F' || second.charAt(j) == 'g') {
+                secondLetterFs++;
+            } else if (second.charAt(j) == 'G' || second.charAt(j) == 'g') {
+                secondLetterGs++;
+            } else if (second.charAt(j) == 'H' || second.charAt(j) == 'h') {
+                secondLetterHs++;
+            } else if (second.charAt(j) == 'I' || second.charAt(j) == 'i') {
+                secondLetterIs++;
+            } else if (second.charAt(j) == 'J' || second.charAt(j) == 'j') {
+                secondLetterJs++;
+            } else if (second.charAt(j) == 'K' || second.charAt(j) == 'k') {
+                secondLetterKs++;
+            } else if (second.charAt(j) == 'L' || second.charAt(j) == 'l') {
+                secondLetterLs++;
+            } else if (second.charAt(j) == 'M' || second.charAt(j) == 'm') {
+                secondLetterMs++;
+            } else if (second.charAt(j) == 'N' || second.charAt(j) == 'n') {
+                secondLetterNs++;
+            } else if (second.charAt(j) == 'O' || second.charAt(j) == 'o') {
+                secondLetterOs++;
+            } else if (second.charAt(j) == 'P' || second.charAt(j) == 'p') {
+                secondLetterPs++;
+            } else if (second.charAt(j) == 'Q' || second.charAt(j) == 'q') {
+                secondLetterQs++;
+            } else if (second.charAt(j) == 'R' || second.charAt(j) == 'r') {
+                secondLetterRs++;
+            } else if (second.charAt(j) == 'S' || second.charAt(j) == 's') {
+                secondLetterSs++;
+            } else if (second.charAt(j) == 'T' || second.charAt(j) == 't') {
+                secondLetterTs++;
+            } else if (second.charAt(j) == 'U' || second.charAt(j) == 'u') {
+                secondLetterUs++;
+            } else if (second.charAt(j) == 'V' || second.charAt(j) == 'v') {
+                secondLetterVs++;
+            } else if (second.charAt(j) == 'W' || second.charAt(j) == 'w') {
+                secondLetterWs++;
+            } else if (second.charAt(j) == 'X' || second.charAt(j) == 'x') {
+                secondLetterXs++;
+            } else if (second.charAt(j) == 'Y' || second.charAt(j) == 'y') {
+                secondLetterYs++;
+            } else if (second.charAt(j) == 'Z' || second.charAt(j) == 'z') {
+                secondLetterZs++;
+            } else if (second.charAt(j) == '0') {
+                secondNumber0s++;
+            } else if (second.charAt(j) == '1') {
+                secondNumber1s++;
+            } else if (second.charAt(j) == '2') {
+                secondNumber2s++;
+            } else if (second.charAt(j) == '3') {
+                secondNumber3s++;
+            } else if (second.charAt(j) == '4') {
+                secondNumber4s++;
+            } else if (second.charAt(j) == '5') {
+                secondNumber5s++;
+            } else if (second.charAt(j) == '6') {
+                secondNumber6s++;
+            } else if (second.charAt(j) == '7') {
+                secondNumber7s++;
+            } else if (second.charAt(j) == '8') {
+                secondNumber8s++;
+            } else if (second.charAt(j) == '9') {
+                secondNumber9s++;
+            }
+        }
+        if (firstLetterAs == secondLetterAs && firstLetterBs == secondLetterBs
+                && firstLetterCs == secondLetterCs && firstLetterDs == secondLetterDs
+                && firstLetterEs == secondLetterEs && firstLetterFs == secondLetterFs
+                && firstLetterGs == secondLetterGs && firstLetterHs == secondLetterHs
+                && firstLetterIs == secondLetterIs && firstLetterJs == secondLetterJs
+                && firstLetterKs == secondLetterKs && firstLetterLs == secondLetterLs
+                && firstLetterMs == secondLetterMs && firstLetterNs == secondLetterNs
+                && firstLetterOs == secondLetterOs && firstLetterPs == secondLetterPs
+                && firstLetterQs == secondLetterQs && firstLetterRs == secondLetterRs
+                && firstLetterSs == secondLetterSs && firstLetterTs == secondLetterTs
+                && firstLetterUs == secondLetterUs && firstLetterVs == secondLetterVs
+                && firstLetterWs == secondLetterWs && firstLetterXs == secondLetterXs
+                && firstLetterYs == secondLetterYs && firstLetterZs == secondLetterZs
+                && firstNumber0s == secondNumber0s && firstNumber1s == secondNumber1s
+                && firstNumber2s == secondNumber2s && firstNumber3s == secondNumber3s
+                && firstNumber4s == secondNumber4s && firstNumber5s == secondNumber5s
+                && firstNumber6s == secondNumber6s && firstNumber7s == secondNumber7s
+                && firstNumber8s == secondNumber8s && firstNumber9s == secondNumber9s) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /* ********************************************************************************************
